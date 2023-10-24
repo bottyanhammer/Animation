@@ -1,0 +1,41 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+body{
+    background-color: hsl(40,70%,80%);
+}
+.container, .big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+}
+.big{    
+    width: 30vh;
+    height: 30vh;
+    background-color: #ca1b38;
+    animation-name: bigRotate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+}
+@keyframes bigRotate{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(-180deg);}
+}
+
+.little{
+    width: 10vh;
+    height: 10vh;
+    background-color: #277ead;
+    animation-name: littleRotate;
+    animation-duration: 1s;
+
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes littleRotate{
+    from {rotate: 0deg}
+    to {rotate:360deg}
+}
